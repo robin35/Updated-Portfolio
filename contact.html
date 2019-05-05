@@ -2,7 +2,7 @@
 <html lang="en-us">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name = "viewpoint" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/MeyerCSSReset.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -11,31 +11,23 @@
     </head>
 
     <body>
-        
-        <!-- Creates a container and nested boxes for the upper page -->
-        <div class="container">
-
-            <div class="box">
-                <h1>Terra Robinson</h1>
-            </div>
-
-            <!-- Creates the navigation menu -->
-            <div class="box">
-                <nav>
-                    <a href="index.html">About</a> |
-                    <a href="portfolio.html">Portfolio</a> |
-                    <a href="contact.html">Contact</a>
-
-                </nav>
-            </div>
-
-            <div class="clear"></div>
+        <!-- Creates a navigation bar = upper page -->
+        <div>
+            <h1>Terra Robinson</h1>
+        </div>
+            
+        <div class="topnav">
+            <nav>
+                <a href="index.html">About</a> 
+                <a href="portfolio.html">Portfolio</a> 
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
 
         <!-- Creates a container and nested boxes for the lower page -->
-        <div id="container2">
+        <div id="container4">
 
-            <div id="box2">
+            <div id="box4">
 
                 <h2 class="headers">Contact</h2>
 
@@ -43,15 +35,18 @@
                 <hr>
 
                 <!-- Creates an input form -->
-                <form id="forms">
-                    Name<br/>     <input type="text"  size="123px" name="name">     <br/>
-                    Email<br/>    <input type="email" size="123px" name="email">    <br/>
-                    Message<br/>  <textarea rows="10" cols="125" name="message"> </textarea>  <br/>
-                </form>
-                                            
-                <!-- Creates a submit button -->
-                <button class="button button1">Submit</button>
-                
+                <form class="form-inline" >
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter first and last names" name="userName">
+                                              
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter email" name="email">
+
+                    <label for="msg">Message:</label>
+                    <textarea placeholder="Enter your message" name="msg"></textarea>
+
+                    <button type="submit">Submit</button>
+                  </form>
 
             </div>
             
