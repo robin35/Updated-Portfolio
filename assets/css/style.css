@@ -178,10 +178,7 @@ p{
 
 /* Overlays verbiage on the images */
 #position{
-    position: relative;
-    background-color:  #4aaaa5;
-    color: white;
-    width: 250px;
+    color: black;
     height: 25px;
     text-align: center;
     top: -40px;
@@ -189,7 +186,9 @@ p{
     padding-top: 6px;
 }
 
-
+table{
+    margin-left: 25px;
+}
 
 /* ------------Styles all h2 Headers and Horizontal lines - lower page---------- */
 
